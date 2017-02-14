@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>track</title>
+  <link href="/static/normalize.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="svg-wrapper" style="position: relative">
+  <div class="tooltip-wrapper"></div>
+  <svg class="floor-map">
+    <g class="board">
+      <g class="regions-layer-wrapper"></g>
+      <g class="texts-layer-wrapper"></g>
+      <g class="items-layer"></g>
+      <g class="path-layer"></g>
+    </g>
+  </svg>
+</div>
+<button class="reset-transform">重置缩放</button>
+<div class="widgets">
+  <div class="mac-list-widget">
+    <p class="title">MAC地址管理</p>
+    <div class="mac-list">
+      <!-- div.mac-item[] -->
+    </div>
+    <div class="new-mac-item">
+      <input type="text" style="font-family: monospace">
+      <button>Add</button>
+    </div>
+  </div>
+  <div class="duration-widget">
+    <p class="title">时间控制</p>
+    <p class="duration">
+      <label>总时间区间
+        <select class="duration-select">
+          <option value="1">1分钟</option>
+          <option value="5">5分钟</option>
+          <option value="60">1小时</option>
+          <option value="180" selected>3小时</option>
+        </select>
+      </label>
+    </p>
+    <div class="span-info">
+      <p class="span-start">
+        <span class="text">起始时间</span>
+        <span class="value"></span>
+      </p>
+      <p class="span-end">
+        <span class="text">终止时间</span>
+        <span class="value"></span>
+      </p>
+      <p class="span-length">
+        <span class="text">时间区间</span>
+        <span class="value"></span>
+      </p>
+      <svg class="brush-container">
+        <g class="time-stats-wrapper"></g>
+      </svg>
+    </div>
+  </div>
+  <div class="floor-list-widget">
+    <p class="title">楼层地图切换</p>
+    <div class="floor-list">
+      <!-- div.floor-item[] -->
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

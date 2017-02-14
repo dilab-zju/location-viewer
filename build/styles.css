@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'microsoft yahei';
+}
+.mac-list-widget .mac-list .mac-item .mac-delete,
+.mac-list-widget .new-mac-item button,
+.reset-transform {
+  height: 24px;
+  line-height: 24px;
+  border: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+.mac-list-widget .title,
+.floor-list-widget .title,
+.duration-widget .title {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  background: #4682b4;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.widgets {
+  width: 250px;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  background: rgba(255,255,255,0.9);
+}
+.mac-list-widget {
+  border: 1px solid #4682b4;
+}
+.mac-list-widget .mac-list {
+  display: flex;
+  flex-flow: column;
+}
+.mac-list-widget .mac-list .mac-item {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  border-top: 1px solid #4682b4;
+  transition: background 0.3s ease-in;
+}
+.mac-list-widget .mac-list .mac-item:first-child {
+  border-top: none;
+}
+.mac-list-widget .mac-list .mac-item:hover {
+  background: rgba(51,51,51,0.25);
+}
+.mac-list-widget .mac-list .mac-item .mac-color > .color {
+  width: 16px;
+  height: 16px;
+  margin: 8px;
+  border-radius: 50%;
+}
+.mac-list-widget .mac-list .mac-item .mac-text {
+  width: 160px;
+  margin: 0;
+  margin-left: 5px;
+  line-height: 32px;
+  font-size: 14px;
+  font-family: monospace, 'microsoft yahei';
+}
+.mac-list-widget .mac-list .mac-item .mac-delete {
+  margin-left: auto;
+}
+.mac-list-widget .mac-list .mac-item .mac-check {
+  display: block;
+  height: 32px;
+  width: 16px;
+  margin-left: 8px;
+  margin-right: 4px;
+}
+.mac-list-widget .new-mac-item {
+  padding-left: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #4682b4;
+}
+.mac-list-widget .new-mac-item input {
+  height: 24px;
+}
+.mac-list-widget .new-mac-item button {
+  margin-left: auto;
+  margin-right: 4px;
+}
+.floor-list-widget {
+  margin-top: 16px;
+  border: 1px solid #4682b4;
+}
+.floor-list-widget .floor-list .floor-item {
+  position: relative;
+  display: flex;
+  height: 32px;
+  border-top: 1px solid #4682b4;
+  cursor: pointer;
+  transition: background 0.3s ease-in;
+}
+.floor-list-widget .floor-list .floor-item:first-child {
+  border-top: none;
+}
+.floor-list-widget .floor-list .floor-item:hover {
+  background: rgba(51,51,51,0.25);
+}
+.floor-list-widget .floor-list .floor-item .bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.floor-list-widget .floor-list .floor-item .floor-text {
+  width: 160px;
+  line-height: 32px;
+  padding-left: 8px;
+  margin: 0;
+}
+.floor-list-widget .floor-list .floor-item .floor-text .count {
+  margin-left: 8px;
+}
+.floor-list-widget .floor-list .floor-item .floor-radio {
+  display: block;
+  height: 32px;
+  width: 16px;
+  margin-left: auto;
+  margin-right: 4px;
+  pointer-events: none;
+}
+.duration-widget {
+  margin-top: 16px;
+  border: 1px solid #4682b4;
+}
+.duration-widget p {
+  margin: 0;
+  line-height: 32px;
+  font-size: 14px;
+}
+.duration-widget .duration,
+.duration-widget .span-info {
+  padding: 0 8px;
+}
+.duration-widget .brush-container {
+  display: block;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 8px;
+  background: #eef2f5;
+}
+.duration-widget .brush-container .selection {
+  fill: #2196f3;
+}
+.reset-transform {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.floor-map {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Microsoft Yahei";
+}
+.floor-map text {
+  pointer-events: none;
+}
+.svg-wrapper {
+  overflow: hidden;
+}
+.tooltip-wrapper {
+  position: absolute;
+  pointer-events: none;
+}
+.tooltip-wrapper > div {
+  position: absolute;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 8px;
+  transform: translate(16px, 16px);
+  font-family: monospace;
+  font-size: 20px;
+}
