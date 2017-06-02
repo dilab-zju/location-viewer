@@ -35,7 +35,7 @@ export default class ItemCache extends EventEmitter {
   }
 
   private fetchData(): Promise<Item[]> {
-    return fetch('/static/allItems.json')
+    return fetch('./static/allItems.json')
       .then(response => response.json())
   }
 

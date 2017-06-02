@@ -1,7 +1,7 @@
 import * as d3 from 'd3'
 
 export async function fetchFloorData(floorId: number): Promise<Floor> {
-  const response = await fetch(`/static/floor/${floorId}.json`)
+  const response = await fetch(`./static/floor/${floorId}.json`)
   return response.json()
 }
 

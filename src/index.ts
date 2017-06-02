@@ -77,7 +77,13 @@ floorListManager.on('floor-id-change', async function onFloorIdChange(floorId: n
 document.querySelector('.reset-transform').addEventListener('click', () => drawingManager.resetTransform())
 
 config.floorDataArray.forEach(floorData => floorListManager.add(floorData))
-config.testMacs.forEach(macItem => macListManager.add(macItem.mac, macItem.active))
+if (config.testMacs.length > 0) {
+  config.testMacs.forEach(macItem => macListManager.add(macItem.mac, macItem.active))
+} else {
+  Object.keys(config.staticMacMap).forEach(mac => {
+    macListManager.add(mac, true)
+  })
+}
 
 onTotalSpanChange()
 brushManager.setAsDefaultSpan()

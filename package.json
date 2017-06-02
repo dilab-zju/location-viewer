@@ -4,7 +4,7 @@
   "author": "Shi Feichao<842351815@qq.com> (http://shinima.pw/)",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "set NODE_ENV=production&& webpack"
+    "build": "set NODE_ENV=production&& webpack && cp --recursive static/ build/"
   },
   "dependencies": {
     "@types/d3": "^4.5.0",
